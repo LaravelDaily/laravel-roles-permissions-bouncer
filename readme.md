@@ -1,6 +1,7 @@
 ## Laravel Roles Permissions Admin - Bouncer version
 
 This is a Laravel 5.4 adminpanel starter project with roles-permissions management based on [Joseph Silber's Bouncer package](https://github.com/JosephSilber/bouncer), [AdminLTE theme](https://adminlte.io/) and [Datatables.net](https://datatables.net).
+
 We've also created almost identical project based on Spatie's Laravel-permission package: [see here](https://github.com/LaravelDaily/laravel-roles-permissions-manager)
 
 Part of this project was generated automatically by [QuickAdminPanel system](https://quickadminpanel.com/).
@@ -28,4 +29,4 @@ The [MIT license](http://opensource.org/licenses/MIT).
 
 ## Notice
 
-We are not responsible for any functionality or bugs in **AdminLTE**, **Laravel-permission** or **Datatables** packages or their future versions, if you find bugs there - please contact vendors directly.
+We are not responsible for any functionality or bugs in **AdminLTE**, **Bouncer** or **Datatables** packages or their future versions, if you find bugs there - please contact vendors directly.
