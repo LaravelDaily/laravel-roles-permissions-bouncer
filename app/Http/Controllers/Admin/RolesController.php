@@ -93,7 +93,7 @@ class RolesController extends Controller
         }
         $role = Role::findOrFail($id);
         $role->update($request->all());
-        foreach ($role->abilities() as $ability) {
+        foreach ($role->getAbilities() as $ability) {
             $role->disallow($ability->name);
         }
         $role->allow($request->input('abilities'));
