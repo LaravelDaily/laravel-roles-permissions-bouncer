@@ -23,7 +23,7 @@ class UsersController extends Controller
             return abort(401);
         }
 
-        $users = User::all();
+        $users = User::all()->load('roles');
 
         return view('admin.users.index', compact('users'));
     }
