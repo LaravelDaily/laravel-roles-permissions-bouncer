@@ -35,7 +35,7 @@
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>
-                                    @foreach ($user->roles()->pluck('name') as $role)
+                                    @foreach ($user->roles->pluck('name') as $role)
                                         <span class="label label-info label-many">{{ $role }}</span>
                                     @endforeach
                                 </td>
