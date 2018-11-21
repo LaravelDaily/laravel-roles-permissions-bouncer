@@ -6,7 +6,7 @@ We've also created almost identical project based on Spatie's Laravel-permission
 
 Part of this project was generated automatically by [QuickAdminPanel system](https://quickadminpanel.com/).
 
-![Larancer screenshot](http://webcoderpro.com/roles-permissions-manager-bouncer.png)
+![Larancer screenshot](https://laraveldaily.com/wp-content/uploads/2018/11/roles-permissions-manager-bouncer.png)
 
 ## Usage
 
@@ -39,3 +39,4 @@ We are not responsible for any functionality or bugs in **AdminLTE**, **Bouncer*
 - Follow our [Twitter](https://twitter.com/dailylaravel) and [Blog](http://laraveldaily.com/blog)
 - Subscribe to our [newsletter with 20+ Laravel links every Thursday](http://laraveldaily.com/weekly-laravel-newsletter/)
 - Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
+- Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
