@@ -91,6 +91,14 @@ class AbilitiesController extends Controller
         return redirect()->route('admin.abilities.index');
     }
 
+    public function show(Ability $ability)
+    {
+        if (! Gate::allows('users_manage')) {
+            return abort(401);
+        }
+
+        return view('admin.abilities.show', compact('ability'));
+    }
 
     /**
      * Remove Ability from storage.
@@ -119,13 +127,9 @@ class AbilitiesController extends Controller
         if (! Gate::allows('users_manage')) {
             return abort(401);
         }
-        if ($request->input('ids')) {
-            $entries = Ability::whereIn('id', $request->input('ids'))->get();
+        Ability::whereIn('id', request('ids'))->delete();
 
-            foreach ($entries as $entry) {
-                $entry->delete();
-            }
-        }
+        return response(null, Response::HTTP_NO_CONTENT);
     }
 
 }

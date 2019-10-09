@@ -101,6 +101,16 @@ class RolesController extends Controller
         return redirect()->route('admin.roles.index');
     }
 
+    public function show(Role $role)
+    {
+        if (! Gate::allows('users_manage')) {
+            return abort(401);
+        }
+
+        $role->load('abilities');
+
+        return view('admin.roles.show', compact('role'));
+    }
 
     /**
      * Remove Role from storage.
@@ -129,13 +139,9 @@ class RolesController extends Controller
         if (! Gate::allows('users_manage')) {
             return abort(401);
         }
-        if ($request->input('ids')) {
-            $entries = Role::whereIn('id', $request->input('ids'))->get();
+        Role::whereIn('id', request('ids'))->delete();
 
-            foreach ($entries as $entry) {
-                $entry->delete();
-            }
-        }
+        return response(null, Response::HTTP_NO_CONTENT);
     }
 
 }
