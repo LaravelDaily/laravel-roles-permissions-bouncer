@@ -10,7 +10,9 @@ We've also created almost identical project based on Spatie's Laravel-permission
 
 Part of this project was generated automatically by [QuickAdminPanel system](https://quickadminpanel.com/).
 
-![Laravel roles permissions screenshot](https://laraveldaily.com/wp-content/uploads/2018/11/roles-permissions-manager-bouncer.png)
+![Laravel roles permissions screenshot](https://laraveldaily.com/wp-content/uploads/2019/10/laravel-roles-permissions-bouncer-01.png)
+
+![Laravel roles permissions screenshot 02](https://laraveldaily.com/wp-content/uploads/2019/10/laravel-roles-permissions-bouncer-02.png)
 
 ## Usage
 
