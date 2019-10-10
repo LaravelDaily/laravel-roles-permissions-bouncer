@@ -106,6 +106,17 @@ class UsersController extends Controller
         return redirect()->route('admin.users.index');
     }
 
+    public function show(User $user)
+    {
+        if (! Gate::allows('users_manage')) {
+            return abort(401);
+        }
+
+        $user->load('roles');
+
+        return view('admin.users.show', compact('user'));
+    }
+
     /**
      * Remove User from storage.
      *
@@ -133,13 +144,9 @@ class UsersController extends Controller
         if (! Gate::allows('users_manage')) {
             return abort(401);
         }
-        if ($request->input('ids')) {
-            $entries = User::whereIn('id', $request->input('ids'))->get();
+        User::whereIn('id', request('ids'))->delete();
 
-            foreach ($entries as $entry) {
-                $entry->delete();
-            }
-        }
+        return response(null, Response::HTTP_NO_CONTENT);
     }
 
 }
