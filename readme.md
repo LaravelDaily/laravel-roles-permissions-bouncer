@@ -1,12 +1,18 @@
 ## Laravel Roles Permissions Admin - Bouncer version
 
-This is a Laravel 5.4 adminpanel starter project with roles-permissions management based on [Joseph Silber's Bouncer package](https://github.com/JosephSilber/bouncer), [AdminLTE theme](https://adminlte.io/) and [Datatables.net](https://datatables.net).
+__Update October 2019__: this project was created in 2017 as Laravel 5.4 version, and now we upgraded it to Laravel 6 version, also changed the design theme from [AdminLTE]((https://adminlte.io/)) to [CoreUI](https://coreui.io)
+
+- - - - -
+
+This is a Laravel 6 adminpanel starter project with roles-permissions management based on [Joseph Silber's Bouncer package](https://github.com/JosephSilber/bouncer), [CoreUI theme](https://coreui.io/) and [Datatables.net](https://datatables.net).
 
 We've also created almost identical project based on Spatie's Laravel-permission package: [see here](https://github.com/LaravelDaily/laravel-roles-permissions-manager)
 
 Part of this project was generated automatically by [QuickAdminPanel system](https://quickadminpanel.com/).
 
-![Larancer screenshot](https://laraveldaily.com/wp-content/uploads/2018/11/roles-permissions-manager-bouncer.png)
+![Laravel roles permissions screenshot](https://laraveldaily.com/wp-content/uploads/2019/10/laravel-roles-permissions-bouncer-01.png)
+
+![Laravel roles permissions screenshot 02](https://laraveldaily.com/wp-content/uploads/2019/10/laravel-roles-permissions-bouncer-02.png)
 
 ## Usage
 
@@ -29,14 +35,14 @@ The [MIT license](http://opensource.org/licenses/MIT).
 
 ## Notice
 
-We are not responsible for any functionality or bugs in **AdminLTE**, **Bouncer** or **Datatables** packages or their future versions, if you find bugs there - please contact vendors directly.
+We are not responsible for any functionality or bugs in **CoreUI**, **Bouncer** or **Datatables** packages or their future versions, if you find bugs there - please contact vendors directly.
 
 ---
 
 ## More from our LaravelDaily Team
 
-- Read our [Daily Blog with Laravel Tutorials](https://laraveldaily.com)
+- Check out our adminpanel generator [QuickAdminPanel](https://quickadminpanel.com)
+- Read our [Blog with Laravel Tutorials](https://laraveldaily.com)
 - FREE E-book: [50 Laravel Quick Tips (and counting)](https://laraveldaily.com/free-e-book-40-laravel-quick-tips-and-counting/)
-- Check out our adminpanel generator QuickAdminPanel: [Laravel version](https://quickadminpanel.com) and [Vue.js version](https://vue.quickadminpanel.com)
 - Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
 - Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
