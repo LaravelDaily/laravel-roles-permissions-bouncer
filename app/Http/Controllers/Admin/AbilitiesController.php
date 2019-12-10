@@ -129,7 +129,7 @@ class AbilitiesController extends Controller
         }
         Ability::whereIn('id', request('ids'))->delete();
 
-        return response(null, Response::HTTP_NO_CONTENT);
+        return response()->noContent();
     }
 
 }
